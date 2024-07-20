@@ -1,52 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
 .flex-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: stretch;
-            flex-wrap: wrap;
-            padding: 20px;
-            background-color: white;
-            border: 5px solid white; 
-            justify-content: space-evenly;
-        }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+.container-section{
+    background-image: url("https://www.clays.co.uk/wp-content/uploads/hero-books.jpg");
+    text-align: center;
+    text-decoration: #007bff;
+    background-size: cover;
+    background-position: center;
+}
 
-        .div1 {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            margin: 10px;
-            flex: 1 1 calc(10% - 60px); 
-            display: flex;
-            flex-direction: column; 
-        }
 
-        .div1 img {
-            height: 10em;
-            width: 100%; 
-        }
+.book-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 200px;
+    text-align: center;
+}
 
-        .div1d {
-            padding: 15px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
+.gallery-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    display:flex;
+}
 
-        .div1 h3 {
-            margin: 0 0 10px;
-            font-size: 18px;
-            color: #333;
-        }
+label {
+    display: block;
+    margin-top: 10px;
+}
 
-        .div1 p {
-            margin: 10px 0;
-            color: #666;
-            flex-grow: 1;
-        }
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+
+
+button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+form-group {
+    margin-bottom: 1rem;
+}
+form-check {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .book-item {
+        margin: 0 auto 10px;
+    }
+}
+img{
+    display:flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: white;
+    border: 5px solid white; 
+    justify-content: space-evenly;
+    height: 9 em;
+    width: 75%;
+
+    
+}
