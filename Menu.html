@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .card {
+            margin-bottom: 20px;
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .modal-body img {
+            max-width: 100%;
+            height: auto;
+        }
+        .modal-content {
+            border-radius: 10px;
+        }
+        body {
+            background-image: url('https://images01.nicepagecdn.com/page/67/56/homepage-design-preview-67567.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        h1{
+            background-color: aqua;
+            text-align: justify;
+        }
+    </style>
+    
+    </head>
+<body>
+
+    <i class="fa-sharp-duotone fa-solid fa-user-chef"></i>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <a class="navbar-brand" href="#">Restaurant</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class = "nav-link" href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1>MENU</h1>
+
+    <div class="container">
+        <div class="row">
+            <!-- Image 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i0.wp.com/www.nandanmsd.com/wp-content/uploads/2020/08/IDLI-VADA-scaled.jpg?fit=2560%2C1868&ssl=1" class="card-img-top" alt="Menu Item 1">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menuItemModal1">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.awesomecuisine.com/wp-content/uploads/2009/06/Plain-Dosa.jpg "class="card-img-top" alt="Menu Item 2">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menuItemModal2">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.awesomecuisine.com/wp-content/uploads/2020/03/poori-masala-kizhangu.jpg" class="card-img-top" alt="Menu Item 3">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menuItemModal3">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 4 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNKxkY6nHnESN7m1ZxZvrG7QF8LdSjGYI2cg&s" class="card-img-top" alt="Menu Item 4">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menuItemModal4">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 5 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://shwetainthekitchen.com/wp-content/uploads/2023/03/vegetable-noodles.jpg" class="card-img-top" alt="Menu Item 5">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menuItemModal5">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 6 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.thespruceeats.com/thmb/XDBL9gA6A6nYWUdsRZ3QwH084rk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-chicken-biryani-recipe-7367850-hero-A-ed211926bb0e4ca1be510695c15ce111.jpg" class="card-img-top" alt="Menu Item 6">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menuItemModal6">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="menuItemModal1" tabindex="-1" aria-labelledby="menuItemModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuItemModalLabel1">Menu Item 1 Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x600" alt="Menu Item 1 Image">
+                    <!-- Menu Item Details -->
+                    <dl class="row mt-4">
+                        <dt class="col-sm-3">Item ID:</dt>
+                        <dd class="col-sm-9">001</dd>
+                        <dt class="col-sm-3">Name:</dt>
+                        <dd class="col-sm-9">Idli</dd>
+                        
+                        <dt class="col-sm-3">Price:</dt>
+                        <dd class="col-sm-9">$10.00</dd>
+                        <dt class="col-sm-3">Category ID:</dt>
+                        <dd class="col-sm-9">1</dd>
+                        <dt class="col-sm-3">Available Status:</dt>
+                        <dd class="col-sm-9">Available</dd>
+                        <dt class="col-sm-3">Spicy Level:</dt>
+                        <dd class="col-sm-9">2</dd>
+                        <dt class="col-sm-3">Vegetarian:</dt>
+                        <dd class="col-sm-9">Yes</dd>
+                        <dt class="col-sm-3">Calories:</dt>
+                        <dd class="col-sm-9">200</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Item 2 -->
+    <div class="modal fade" id="menuItemModal2" tabindex="-1" aria-labelledby="menuItemModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuItemModalLabel2">Menu Item 2 Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x600" alt="Menu Item 2 Image">
+                    <!-- Menu Item Details -->
+                    <dl class="row mt-4">
+                        <dt class="col-sm-3">Item ID:</dt>
+                        <dd class="col-sm-9">002</dd>
+                        <dt class="col-sm-3">Name:</dt>
+                        <dd class="col-sm-9">Dosa</dd>
+                        
+                        <dt class="col-sm-3">Price:</dt>
+                        <dd class="col-sm-9">$15.00</dd>
+                        <dt class="col-sm-3">Category ID:</dt>
+                        <dd class="col-sm-9">2</dd>
+                        <dt class="col-sm-3">Available Status:</dt>
+                        <dd class="col-sm-9">Available</dd>
+                        <dt class="col-sm-3">Spicy Level:</dt>
+                        <dd class="col-sm-9">3</dd>
+                        <dt class="col-sm-3">Vegetarian:</dt>
+                        <dd class="col-sm-9">No</dd>
+                        <dt class="col-sm-3">Calories:</dt>
+                        <dd class="col-sm-9">400</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Item 3 -->
+    <div class="modal fade" id="menuItemModal3" tabindex="-1" aria-labelledby="menuItemModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuItemModalLabel3">Menu Item 3 Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x600" alt="Menu Item 3 Image">
+                    <!-- Menu Item Details -->
+                    <dl class="row mt-4">
+                        <dt class="col-sm-3">Item ID:</dt>
+                        <dd class="col-sm-9">003</dd>
+                        <dt class="col-sm-3">Name:</dt>
+                        <dd class="col-sm-9">poori</dd>
+                       
+                        <dt class="col-sm-3">Price:</dt>
+                        <dd class="col-sm-9">$12.50</dd>
+                        <dt class="col-sm-3">Category ID:</dt>
+                        <dd class="col-sm-9">3</dd>
+                        <dt class="col-sm-3">Available Status:</dt>
+                        <dd class="col-sm-9">Available</dd>
+                        <dt class="col-sm-3">Spicy Level:</dt>
+                        <dd class="col-sm-9">5</dd>
+                        <dt class="col-sm-3">Vegetarian:</dt>
+                        <dd class="col-sm-9">Yes</dd>
+                        <dt class="col-sm-3">Calories:</dt>
+                        <dd class="col-sm-9">300</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Item 4 -->
+    <div class="modal fade" id="menuItemModal4" tabindex="-1" aria-labelledby="menuItemModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuItemModalLabel4">Menu Item 4 Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x600" alt="Menu Item 4 Image">
+                    <!-- Menu Item Details -->
+                    <dl class="row mt-4">
+                        <dt class="col-sm-3">Item ID:</dt>
+                        <dd class="col-sm-9">004</dd>
+                        <dt class="col-sm-3">Name:</dt>
+                        <dd class="col-sm-9">Chapati</dd>
+                        <dt class="col-sm-3">Description:</dt>
+                        <dd class="col-sm-9">Description of Dish 4.</dd>
+                        <dt class="col-sm-3">Price:</dt>
+                        <dd class="col-sm-9">$20.00</dd>
+                        <dt class="col-sm-3">Category ID:</dt>
+                        <dd class="col-sm-9">4</dd>
+                        <dt class="col-sm-3">Available Status:</dt>
+                        <dd class="col-sm-9">Available</dd>
+                        <dt class="col-sm-3">Spicy Level:</dt>
+                        <dd class="col-sm-9">1</dd>
+                        <dt class="col-sm-3">Vegetarian:</dt>
+                        <dd class="col-sm-9">No</dd>
+                        <dt class="col-sm-3">Calories:</dt>
+                        <dd class="col-sm-9">500</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Item 5 -->
+    <div class="modal fade" id="menuItemModal5" tabindex="-1" aria-labelledby="menuItemModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuItemModalLabel5">Menu Item 5 Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x600" alt="Menu Item 5 Image">
+                    <!-- Menu Item Details -->
+                    <dl class="row mt-4">
+                        <dt class="col-sm-3">Item ID:</dt>
+                        <dd class="col-sm-9">005</dd>
+                        <dt class="col-sm-3">Name:</dt>
+                        <dd class="col-sm-9">vegetable-noodles</dd>
+                        <dt class="col-sm-3">Price:</dt>
+                        <dd class="col-sm-9">$17.50</dd>
+                        <dt class="col-sm-3">Category ID:</dt>
+                        <dd class="col-sm-9">5</dd>
+                        <dt class="col-sm-3">Available Status:</dt>
+                        <dd class="col-sm-9">Available</dd>
+                        <dt class="col-sm-3">Spicy Level:</dt>
+                        <dd class="col-sm-9">3</dd>
+                        <dt class="col-sm-3">Vegetarian:</dt>
+                        <dd class="col-sm-9">Yes</dd>
+                        <dt class="col-sm-3">Calories:</dt>
+                        <dd class="col-sm-9">350</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Item 6 -->
+    <div class="modal fade" id="menuItemModal6" tabindex="-1" aria-labelledby="menuItemModalLabel6" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuItemModalLabel6">Menu Item 6 Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x600" alt="Menu Item 6 Image">
+                    <!-- Menu Item Details -->
+                    <dl class="row mt-4">
+                        <dt class="col-sm-3">Item ID:</dt>
+                        <dd class="col-sm-9">006</dd>
+                        <dt class="col-sm-3">Name:</dt>
+                        <dd class="col-sm-9">Mushroom Biryani</dd>
+                        <dt class="col-sm-3">Price:</dt>
+                        <dd class="col-sm-9">$22.00</dd>
+                        <dt class="col-sm-3">Category ID:</dt>
+                        <dd class="col-sm-9">6</dd>
+                        <dt class="col-sm-3">Available Status:</dt>
+                        <dd class="col-sm-9">Available</dd>
+                        <dt class="col-sm-3">Spicy Level:</dt>
+                        <dd class="col-sm-9">4</dd>
+                        <dt class="col-sm-3">Vegetarian:</dt>
+                        <dd class="col-sm-9">No</dd>
+                        <dt class="col-sm-3">Calories:</dt>
+                        <dd class="col-sm-9">450</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
